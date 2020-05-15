@@ -13,6 +13,10 @@ app.get('/warp_gen', (req, res) => {
     res.render('warp_gen')
 })
 
+app.get('*', (req, res) => {
+    res.render('warp_gen')
+})
+
 app.listen(port, () => {
     console.log('server up on port ' + port)
 })

@@ -11,7 +11,6 @@ buttonSelector.addEventListener('submit', (e) => {
 
     const url = 'https://warp-reff.herokuapp.com/refer.php?id=' + id
     //console.log(JSON.stringify(body))
-    // console.log(headers)
     const raw = fetch (url).then((response) => {
     response.json().then((data) => {
         // console.log(data)
