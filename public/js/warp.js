@@ -9,7 +9,7 @@ buttonSelector.addEventListener('submit', (e) => {
 
     const id = idSelector.value
 
-    const url = 'http://localhost/warp/refer.php?id=' + id
+    const url = 'https://warp-reff.herokuapp.com/refer.php?id=' + id
     //console.log(JSON.stringify(body))
     // console.log(headers)
     const raw = fetch (url).then((response) => {
